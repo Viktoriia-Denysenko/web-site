@@ -1,2 +1,6 @@
-@import './common';
-@import './example';
+@import './base/modernnormalize';
+@import './base/reset';
+// @import './base/container';
+@import './base/body';
+@import './components/header';
+@import './utils/variables';
