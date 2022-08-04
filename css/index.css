@@ -298,6 +298,52 @@ body {
   font-weight: 400;
 }
 
+.header {
+  width: 320px;
+  height: 100vh;
+  padding: 29px 24px;
+  background-image: url(../images/showcase.jpg);
+  background-size: cover;
+}
+.header__title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 52px;
+  line-height: 66px;
+  text-align: center;
+  color: #E9E9E9;
+}
+.header__subtitle {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 37px;
+  text-align: center;
+  color: #E9E9E9;
+}
+.header__button {
+  display: block;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #28A745;
+  border-radius: 5px;
+  padding: 10px 30px;
+  border: none;
+  margin: auto;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .header {
+    background-image: url(../images/showcase@2x.jpg);
+  }
+}
 .logo__link {
   display: flex;
   align-items: center;
@@ -331,4 +377,5 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
+  color: #FFFFFF;
 }/*# sourceMappingURL=index.css.map */
