@@ -1,59 +1,35 @@
 // --------------------MOBILE---------------------------
-
-.header{
-    width: 320px;
-    height: 100vh;
-    padding: 29px 24px;
-    background-image: url(../images/showcase.jpg);
-        background-size: cover;
-        &__title{
-            font-family: 'Open Sans';
-            font-style: normal;
-            font-weight: 300;
-            font-size: 52px;
-            line-height: 66px;       
-            text-align: center;
-            color: #E9E9E9;
-        }
-        &__subtitle {
-            font-family: 'Open Sans';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 22px;
-            line-height: 37px;
-            text-align: center;
-            color: #E9E9E9;
-        }
-        &__button{
-            display: block;
-            font-family: 'Open Sans';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 26px;
-            text-align: center;
-            color: #FFFFFF;
-            background: #28A745;
-            border-radius: 5px;
-            padding: 10px 30px;
-            border:none;
-            margin: auto;
+.home-page{
+    width: $mobile;
+    position: relative;
+    height: 100%;
+    background-image: url(../images/home/showcase.jpg);
+    background-position: center;
+    background-size: cover;
+    &__overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        padding: 20px 24px;
         }
 }
 
-@media (min-device-pixel-ratio: 2),
-(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-    .header {
-        background-image: url(../images/showcase@2x.jpg);
-            // background-size: cover;
-    }
-}
-
-.logo__link{
+.logo{
     display: flex;
-    align-items: center;
+    align-items:flex-end;
+    margin-bottom: 12px;
+    padding-left: 6px;
+    &__link{
+        margin-right: 5px;
+    }
+    &__icon{
+        width: 39px;
+        height: 31px;
+
+    }
 }
 .logo__first-word{
     font-family: 'Open Sans',
@@ -62,7 +38,7 @@
     font-weight: 400;
     font-size: 32px;
     line-height: 42px;
-    color: #28A745;
+    color: $main-green-color;
 }
 
 .logo__second-word {
@@ -72,7 +48,11 @@
     font-weight: 400;
     font-size: 32px;
     line-height: 42px;
-    color: #FFFFFF;
+    color: $main-light-text-color;
+}
+
+.masthead__wrapper{
+    margin-bottom: 40px;
 }
 
 .navigation{
@@ -80,12 +60,61 @@
         display: flex;
         justify-content: space-between;
     }
+    &____item{
+        padding: 0 6px 3px 6px;      
+    }
     &__link{
         font-family: 'Open Sans', sans-serif;;
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
         line-height: 26px;
-        color: #FFFFFF;
+        color: $main-light-text-color;
+        padding: 0 6px 3px 6px;
+        &:hover{
+            border-bottom: 3px solid $main-green-color;
+        }
+
+    }
+}
+
+.hero {
+    &__title {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 52px;
+        line-height: 66px;
+        text-align: center;
+        color: #E9E9E9;
+        margin-bottom: 20px;
+    }
+
+    &__subtitle {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 37px;
+        text-align: center;
+        color: #E9E9E9;
+        margin-bottom: 24px;
+    }
+
+    &__btn {
+        @extend .btn;
+        text-align: center;
+        padding: 10px 30px;
+        margin: auto;
+    }
+}
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .header__wrapper {
+        background-image: url(../images/home/showcase@2x.jpg);
+        background-size: cover;
     }
 }

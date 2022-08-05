@@ -1,0 +1,40 @@
+.cases__wrapper {
+    width: $mobile;
+    padding: 40px 20px;
+}
+
+.cases {
+    &__img{
+        @extend .img;
+        width: 320px-20px*2;
+    }
+    &__pictures-item{
+        margin-bottom: 8px;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    &__pretitle {
+        @extend .pretitle;
+        text-align: center;
+        color: $main-dark-text-color;
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        @extend .title;
+        text-align: center;
+        color: $main-dark-text-color;
+        margin-bottom: 20px;
+    }
+
+    &__desc {
+        @extend .desc;
+        text-align: center;
+        color: $main-dark-text-color;
+        margin-bottom: 20px;
+    }
+}
+

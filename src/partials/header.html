@@ -1,36 +1,43 @@
-<header class="header">
-  <div class="container">
-    <div class="header__wrapper">
-      <a class="logo__link" href="#">
-        <img src="./images/logo.svg" alt="logo" />
+<section class="container home-page" id="home">
+  <div class="home-page__overlay">
+    <header class="masthead__wrapper">
+      <div class="logo">
+        <a class="logo__link" href="#">
+          <svg class="logo__icon">
+            <use href="./images/sprite.svg#logo"></use>
+          </svg>
+        </a>
         <span class="logo__first-word">Finance</span>
         <span class="logo__second-word">Ledger</span>
-      </a>
+      </div>
 
       <nav class="navigation">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a class="navigation__link" href="#">Home</a>
+            <a class="navigation__link" href="#home">Home</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#">About</a>
+            <a class="navigation__link" href="#about">About</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#">Cases</a>
+            <a class="navigation__link" href="#cases">Cases</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#">Blog</a>
+            <a class="navigation__link" href="#blog">Blog</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#">Contact</a>
+            <a class="navigation__link" href="#contacts">Contact</a>
           </li>
         </ul>
       </nav>
-      <h1 class="header__title">The Sky Is The Limit</h1>
-      <h3 class="header__subtitle">
+    </header>
+
+    <div class="hero">
+      <h1 class="hero__title">The Sky Is The Limit</h1>
+      <h2 class="hero__subtitle">
         We provide world class financial assistance
-      </h3>
-      <button class="header__button">Read More</button>
+      </h2>
+      <button class="hero__btn">Read More</button>
     </div>
   </div>
-</header>
+</section>

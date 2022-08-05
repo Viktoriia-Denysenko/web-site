@@ -2,5 +2,12 @@
 @import './base/reset';
 // @import './base/container';
 @import './base/body';
-@import './components/header';
 @import './utils/variables';
+@import './utils/extend';
+@import './components/header';
+@import './components/about';
+@import './components/cases';
+@import './components/blog';
+@import './components/team';
+@import './components/contacts';
+@import './components/footer';

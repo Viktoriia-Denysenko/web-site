@@ -1,0 +1,29 @@
+.blog__text-wrapper {
+    background-color: $blog-bg-color;
+    width: $mobile;
+    padding: 40px 20px;
+}
+
+.blog {
+    &__img {
+        @extend .img;
+    }
+    &__data {
+        @extend .pretitle;
+    }
+
+    &__title {
+        @extend .title;
+    }
+
+    &__desc {
+        @extend .desc;
+    }
+
+    &__btn {
+        @extend .btn;
+        border: 1px solid $main-light-text-color;
+        background-color: $blog-bg-color;
+        padding: 10px 41px;
+    }
+}

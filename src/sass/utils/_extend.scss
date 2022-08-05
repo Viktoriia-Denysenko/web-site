@@ -1,0 +1,49 @@
+.img{
+    display: block;
+    max-width: $mobile;
+    height: auto;
+}
+
+.pretitle{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: $main-light-text-color;
+    margin-bottom: 8px;
+}
+
+.title{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 48px;
+    color: $main-light-text-color;
+    margin-bottom: 24px;
+}
+
+.desc{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: $main-light-text-color;
+    margin-bottom: 24px;
+}
+
+.btn{
+    display: block;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    border-radius: 5px;
+    background-color: $main-green-color;
+    cursor: pointer;
+    color: $main-light-text-color;
+    border: none;
+}

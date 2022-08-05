@@ -1,0 +1,26 @@
+.about__text-wrapper{
+    background-color: $main-green-color;
+    border-radius: 0px;
+    width: $mobile;
+    padding: 40px 30px;
+}
+
+.about{
+    &__img{
+        @extend .img;
+    }
+    &__pretitle{
+        @extend .pretitle;    
+    }
+    &__title{
+        @extend .title;
+    }
+    &__desc{
+        @extend .desc;
+    }
+    &__btn{
+        @extend .btn;
+        border: 1px solid $main-light-text-color;
+        padding: 10px 36px;
+    }
+}

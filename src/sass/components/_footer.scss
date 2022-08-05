@@ -1,0 +1,31 @@
+.footer{
+    background-color: $main-dark-text-color;
+    width: $mobile;
+    padding: 20px 33px;
+    &__link-items{
+        display: flex;
+        justify-content: center;
+    }
+    &__link-item{
+        margin-right: 25px;
+        width: 35px;
+        height: 35px;
+        &:last-child{
+            margin-right: 0;
+        }        
+    }    
+    &__icon{
+        fill: $main-light-text-color;
+        width: 35px;
+        height: 35px;
+        &:hover{
+            fill: $main-green-color;
+        }
+
+    }
+    &__text{
+        @extend .desc;
+        text-align: center;
+        margin-top: 8px;
+    }
+}
