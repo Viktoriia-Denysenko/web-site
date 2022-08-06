@@ -11,17 +11,22 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Open+Sans:wght@300;400&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="./sass/index.scss" />
+    <!-- <link href="../dist/css/lightbox.css" rel="stylesheet" /> -->
     <script type="module" src="./index.js"></script>
   </head>
   <body>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
     <include src="./partials/header.html"></include>
-    <include src="./partials/about.html"></include>
-    <include src="./partials/cases.html"></include>
-    <include src="./partials/blog.html"></include>
-    <include src="./partials/team.html"></include>
-    <include src="./partials/contacts.html"></include>
+    <main>
+      <include src="./partials/about.html"></include>
+      <include src="./partials/cases.html"></include>
+      <include src="./partials/blog.html"></include>
+      <include src="./partials/team.html"></include>
+      <include src="./partials/contacts.html"></include>
+    </main>
     <include src="./partials/footer.html"></include>
+    <!-- <script src="../dist/js/lightbox-plus-jquery.js"></script> -->
   </body>
 </html>

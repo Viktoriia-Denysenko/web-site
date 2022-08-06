@@ -1,26 +1,61 @@
-.about__text-wrapper{
-    background-color: $main-green-color;
-    border-radius: 0px;
-    width: $mobile;
-    padding: 40px 30px;
+// --------------------MOBILE---------------------------
+.about__text-wrapper {
+  background-color: $main-green-color;
+  padding: 40px 30px;
 }
 
-.about{
-    &__img{
-        @extend .img;
+.about {
+  &__img {
+    @extend .img;
+  }
+  &__subtitle {
+    @extend .subtitle;
+  }
+  &__title {
+    @extend .title;
+  }
+  &__desc {
+    @extend .desc;
+  }
+  &__btn {
+    @extend .btn;
+    border: 1px solid $main-light-text-color;
+    padding: 10px 36px;
+    transition: background-color 250ms linear, color 250ms linear;
+    &:hover {
+      background-color: $main-light-text-color;
+      color: $main-green-color;
     }
-    &__pretitle{
-        @extend .pretitle;    
+  }
+}
+
+// --------------------TABLET---------------------------
+@media screen and (min-width: $tablet) {
+  .about {
+    &__wrapper {
+      display: flex;
+      flex-direction: row;
     }
-    &__title{
-        @extend .title;
+    &__text-wrapper {
+      padding: 40px 53px 40px 32px;
     }
-    &__desc{
-        @extend .desc;
+    &__title {
+      padding-right: 100px;
     }
-    &__btn{
-        @extend .btn;
-        border: 1px solid $main-light-text-color;
-        padding: 10px 36px;
+  }
+}
+
+// --------------------DESKTOP---------------------------
+@media screen and (min-width: $desktop) {
+  .about {
+    &__text-wrapper {
+      padding: 80px 64px 80px 20px;
     }
+    &__title {
+      padding-right: 0;
+    }
+    &__btn {
+      padding: 11px 35px 12px 34px;
+    }
+  }
 }

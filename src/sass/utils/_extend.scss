@@ -1,49 +1,92 @@
-.img{
-    display: block;
-    max-width: $mobile;
-    height: auto;
+// --------------------MOBILE---------------------------
+.logo-text {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 42px;
 }
 
-.pretitle{
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
+.img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.subtitle {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: $main-light-text-color;
+  margin-bottom: 8px;
+}
+
+.title {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 48px;
+  color: $main-light-text-color;
+  margin-bottom: 24px;
+}
+
+.desc {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: $main-light-text-color;
+  margin-bottom: 24px;
+}
+
+.btn {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  border-radius: 5px;
+  background-color: $main-green-color;
+  cursor: pointer;
+  color: $main-light-text-color;
+  border: none;
+}
+
+// --------------------TABLET---------------------------
+@media screen and (min-width: $tablet) {
+  .logo-text {
+    font-size: 35px;
+  }
+
+  .img {
+    width: 368px;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    line-height: 33px;
+  }
+
+  .desc {
     font-size: 18px;
-    line-height: 30px;
-    color: $main-light-text-color;
-    margin-bottom: 8px;
+    line-height: 28px;
+  }
+
+  .btn {
+    font-size: 18px;
+    line-height: 28px;
+  }
 }
 
-.title{
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 38px;
-    line-height: 48px;
-    color: $main-light-text-color;
-    margin-bottom: 24px;
-}
-
-.desc{
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    color: $main-light-text-color;
-    margin-bottom: 24px;
-}
-
-.btn{
-    display: block;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    border-radius: 5px;
-    background-color: $main-green-color;
-    cursor: pointer;
-    color: $main-light-text-color;
-    border: none;
+// --------------------DESKTOP---------------------------
+@media screen and (min-width: $desktop) {
+  .img {
+    width: 670px;
+  }
 }
