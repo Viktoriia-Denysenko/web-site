@@ -2,6 +2,7 @@
 .blog__text-wrapper {
   background-color: $blog-bg-color;
   padding: 40px 20px;
+  height: auto;
 }
 
 .blog {
@@ -22,11 +23,12 @@
 
   &__btn {
     @extend .btn;
+    display: inline-block;
     border: 1px solid $main-light-text-color;
     background-color: $blog-bg-color;
     padding: 10px 41px;
     transition: background-color 250ms linear, color 250ms linear;
-    
+
     &:hover {
       background-color: $main-light-text-color;
       color: $blog-bg-color;
@@ -44,6 +46,11 @@
     &__text-wrapper {
       padding: 40px 53px 40px 32px;
     }
+    &__img {
+      width: 368px;
+      height: 100%;
+      object-fit: cover;
+    }
     &__btn {
       padding: 11px 31px 10px 42px;
     }
@@ -54,6 +61,7 @@
 @media screen and (min-width: $desktop) {
   .blog {
     &__img {
+      width: 670px;
       height: auto;
     }
     &__text-wrapper {

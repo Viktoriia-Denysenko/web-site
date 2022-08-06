@@ -36,11 +36,10 @@
   &__btn {
     @extend .btn;
     text-align: center;
-    padding: 10px 0;
-    width: 280px;
+    padding: 10px 115px;
     margin: 40px auto 0 auto;
     transition: all 250ms linear;
-    
+
     &:hover {
       opacity: 0.85;
     }
@@ -51,6 +50,12 @@
 @media screen and (min-width: $tablet) {
   .contacts {
     margin-bottom: 40px;
+
+    &__img {
+      width: 368px;
+      height: 100%;
+      object-fit: cover;
+    }
 
     &__wrapper {
       display: flex;
@@ -71,8 +76,7 @@
     }
 
     &__btn {
-      padding: 8px 0;
-      width: 336px;
+      padding: 8px 146px;
     }
   }
 }
@@ -81,6 +85,10 @@
 @media screen and (min-width: $desktop) {
   .contacts {
     margin-bottom: 0;
+
+    &__img {
+      width: 670px;
+    }
   }
 
   .form {
@@ -95,7 +103,7 @@
     }
 
     &__btn {
-      width: 642px;
+      padding: 8px 295px;
       margin: 60px auto 0 auto;
     }
   }

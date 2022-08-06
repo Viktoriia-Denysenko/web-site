@@ -7,18 +7,10 @@
     justify-content: center;
   }
   &__link-item {
-    margin-right: 25px;
-    width: 35px;
-    height: 35px;
-    &:last-child {
-      margin-right: 0;
-    }
+    @extend .social-media-link-item;
   }
   &__icon {
-    fill: $main-light-text-color;
-    width: 35px;
-    height: 35px;
-    transition: all 250ms linear;
+    @extend .social-media-link-icon;
 
     &:hover {
       fill: $main-green-color;

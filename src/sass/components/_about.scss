@@ -19,6 +19,7 @@
   }
   &__btn {
     @extend .btn;
+    display: inline-block;
     border: 1px solid $main-light-text-color;
     padding: 10px 36px;
     transition: background-color 250ms linear, color 250ms linear;
@@ -33,6 +34,11 @@
 // --------------------TABLET---------------------------
 @media screen and (min-width: $tablet) {
   .about {
+    &__img {
+      width: 368px;
+      height: 100%;
+      object-fit: cover;
+    }
     &__wrapper {
       display: flex;
       flex-direction: row;
@@ -49,6 +55,9 @@
 // --------------------DESKTOP---------------------------
 @media screen and (min-width: $desktop) {
   .about {
+    &__img {
+      width: 670px;
+    }
     &__text-wrapper {
       padding: 80px 64px 80px 20px;
     }
