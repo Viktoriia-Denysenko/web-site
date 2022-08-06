@@ -26,6 +26,7 @@
     background-color: $blog-bg-color;
     padding: 10px 41px;
     transition: background-color 250ms linear, color 250ms linear;
+    
     &:hover {
       background-color: $main-light-text-color;
       color: $blog-bg-color;

@@ -10,9 +10,14 @@
   }
   &__pictures-item {
     margin-bottom: 8px;
+    transform: all 500ms linear;
 
     &:last-child {
       margin-bottom: 0;
+    }
+
+    &:hover {
+      opacity: 0.85;
     }
   }
 

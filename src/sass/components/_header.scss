@@ -27,18 +27,19 @@
   align-items: flex-end;
   margin-bottom: 12px;
   padding-left: 5px;
+  transition: all 500ms linear;
+
+  &:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+  }
+
   &__link {
     margin-right: 5px;
   }
   &__icon {
     width: 39px;
     height: 31px;
-  }
-  &:hover,
-  &:active {
-    transition: all 0.5s;
-    transform: scale(1.05);
-    filter: brightness(1.2);
   }
 }
 .logo__first-word {
@@ -106,6 +107,7 @@
     padding: 10px 30px;
     margin: auto;
     transition: all 250ms linear;
+
     &:hover {
       opacity: 0.85;
     }

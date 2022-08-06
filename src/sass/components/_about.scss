@@ -22,6 +22,7 @@
     border: 1px solid $main-light-text-color;
     padding: 10px 36px;
     transition: background-color 250ms linear, color 250ms linear;
+
     &:hover {
       background-color: $main-light-text-color;
       color: $main-green-color;

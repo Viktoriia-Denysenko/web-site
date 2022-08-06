@@ -18,6 +18,8 @@
     fill: $main-light-text-color;
     width: 35px;
     height: 35px;
+    transition: all 250ms linear;
+
     &:hover {
       fill: $main-green-color;
     }
