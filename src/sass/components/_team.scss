@@ -160,6 +160,12 @@
       line-height: 28px;
     }
   }
+
+  .overlay {
+    &__link-item {
+      margin-right: 14px;
+    }
+  }
 }
 
 // --------------------DESKTOP---------------------------
@@ -180,6 +186,18 @@
 
     &__team-member-name {
       margin-top: 20px;
+    }
+
+    .overlay {
+      &__link-item {
+        margin-right: 25px;
+        width: 55px;
+        height: 55px;
+      }
+      &__icon {
+        width: 55px;
+        height: 55px;
+      }
     }
   }
 }
